@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: #3b3b3b;
+    margin: 0%;
+}
+/* this is header part */
+.header{
+     background-color: #3b3b3b;
+    text-align: center;
+    padding: 20px;
+    color: #0890cf;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+    /* Navigation bar */
+
+    .topnav{
+        background-color: #333333;
+        overflow: hidden;
+    }
+    /* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 100px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .topnav a:hover{
+      background-color: black;
+      color: #0cfa4c;
+  }
+  /* Column */
+  .column{
+      float: left;
+      padding: 10px;
+  }
+  .column.side{
+      width: 25%;
+  }
+  .column.middle{
+      width: 50%;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* card */
+  .card{
+      background-color: #333333;
+      padding: 10px;
+      border-radius: 15px;
+  }
+  .card img{
+      width: 100%;
+      border-radius: 15px;
+  }
+  .btn{
+      border: none;
+      padding: 15px;
+      background-color:#0273d1 ;
+       margin: 8px;
+       margin-left: 0px;
+       color: #F1F1F1;
+       border-radius: 15px;
+  }
+/* footer */
+.footer{
+     background-color: #F1F1F1;
+     text-align: center;
+     padding: 10px;
+  }
+
+.h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #f2f2f2;
+}
+.h4{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #00ff77;
+}
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column.side, .column.middle {
+        width: 100%;
+      }
+}
